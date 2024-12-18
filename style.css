@@ -10,6 +10,9 @@ h1{
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+#installButton{
+  color: rgb(127, 172, 255);
+}
 
 .showtitle{
   font-size:2em;
