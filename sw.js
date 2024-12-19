@@ -1,4 +1,4 @@
-const version = 'v123';  // change this everytime you update the service worker
+const version = 'v124';  // change this everytime you update the service worker
                           // to force the browser to also update it.
 
 self.addEventListener('install', function(event) {
@@ -32,9 +32,10 @@ const DYNAMIC_CACHE_NAME = 'my-app-dynamic-cache-v1';
 const STATIC_ASSETS = [
   '/', 
   '/index.html',
-  '/styles.css',
-  '/app.js',
-  '/favicon.ico',
+  '/style.css',
+  'apiexample.js',
+  'icons/icon512_maskable.png',
+  'icons/icon512_rounded.png'
   // Add other static files you want to cache
 ];
 
@@ -81,5 +82,3 @@ self.addEventListener('fetch', event => {
       })
   );
 });
-
-
